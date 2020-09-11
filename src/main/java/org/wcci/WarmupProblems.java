@@ -15,6 +15,12 @@ public class WarmupProblems {
      */
     public String stringTimes(String str, int n) {
         //TODO Add the code here that meets the requirements of the problem in the comment above.
+        String repeatedString = "";
+        for (int i = 0; i< n; i++){
+            repeatedString += str
+        }
+
+
         return null;
     }
 
