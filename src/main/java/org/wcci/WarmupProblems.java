@@ -16,11 +16,9 @@ public class WarmupProblems {
     public String stringTimes(String str, int n) {
         //TODO Add the code here that meets the requirements of the problem in the comment above.
         String repeatedString = "";
-        for (int i = 0; i< n; i++){
+        for (int i = 0; i < n; i++) {
             repeatedString += str;
         }
-
-
         return str;
     }
 
@@ -35,8 +33,10 @@ public class WarmupProblems {
      * - icyHot(2, 120) → false
      */
     public boolean icyHot(int temp1, int temp2) {
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return false;
+        if ((temp1 < 0 && temp2 > 100) || (temp1 > 100 && temp2 < 0)) {
+            return true;
+        } else {
+            return false;
+        }
     }
-
 }
