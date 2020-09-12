@@ -1,5 +1,7 @@
 package org.wcci;
 
+import javax.swing.*;
+
 public class StringProblems {
 
     /*
@@ -61,8 +63,15 @@ public class StringProblems {
      * - left2("Hi") → "Hi"
      */
 
-    public String left2(String str){
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
+    public String left2(String str) {
+        //establish the left2
+        if (str.length() > 2) {
+            String left = str.substring(0, 2);
+            String right = str.substring(2,str.length());
+            return right + left;
+        } else
+            return str;
     }
+
+
 }
