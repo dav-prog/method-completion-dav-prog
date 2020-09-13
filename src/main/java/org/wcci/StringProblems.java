@@ -1,7 +1,5 @@
 package org.wcci;
 
-import javax.swing.*;
-
 public class StringProblems {
 
     /*
@@ -17,7 +15,7 @@ public class StringProblems {
      * - smallestStringSorter("zizzer", "zazzer") -> "zizzerzazzer"
      */
 
-    public String smallestStringSorter(String stringA, String stringB){
+    public String smallestStringSorter(String stringA, String stringB) {
         //TODO Add the code here that meets the requirements of the problem in the comment above.
         return null;
     }
@@ -32,7 +30,7 @@ public class StringProblems {
      * - evenUpperCaseOrOddLowerCase("Hello") -> "hello"
      * - evenUpperCaseOrOddLowerCase("Zizzer Zazzer Zuzz") -> "ZIZZER ZAZZER ZUZZ"
      */
-    public String evenUpperCaseOrOddLowerCase(String str){
+    public String evenUpperCaseOrOddLowerCase(String str) {
         //TODO Add the code here that meets the requirements of the problem in the comment above.
         return null;
     }
@@ -47,10 +45,25 @@ public class StringProblems {
      * - stringCombiner("Hello", "There") -> "HelloThere"
      * - stringCombiner("Zizzer" "zazzer") -> "zazzerZizzer"
      */
-    public String stringCombiner(String stringA, String stringB){
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
+    public String stringCombiner(String stringA, String stringB) {
+
+        int compare1 = stringA.compareToIgnoreCase(stringB);
+        int compare2 = stringB.compareToIgnoreCase(stringA);
+
+        if (compare1 < compare2)
+            return stringA + stringB;
+
+        else if (compare1 > compare2)
+            return stringB + stringA;
+
         return null;
+
+
     }
+
+
+
+
 
     /*
      * left2()
