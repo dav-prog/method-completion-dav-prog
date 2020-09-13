@@ -1,5 +1,7 @@
 package org.wcci;
 
+import javax.swing.*;
+
 public class LogicProblems {
     /*
      * squirrelPlay()
@@ -13,9 +15,16 @@ public class LogicProblems {
      * - squirrelPlay(95, true) → true
      */
     public boolean squirrelPlay(int temp, boolean isSummer) {
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
+        //if statements with a
+        if (isSummer && (temp >= 60 && temp <= 100)){
+            return true;
+            }
+        else if (!isSummer && (temp >= 60 && temp <=90)){
+            return true;
+        }
         return false;
-    }
+        }
+
 
     /*
      * nearTen()
