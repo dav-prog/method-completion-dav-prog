@@ -16,9 +16,56 @@ public class StringProblems {
      */
 
     public String smallestStringSorter(String stringA, String stringB) {
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
-    }
+        // if stringA.length > stringB.length
+        // if stringA.length == stringB.length
+        //
+        int str1 = stringA.length();
+        int str2 = stringB.length();
+
+        if(stringA.equals("")){
+            return stringB;
+        }
+        else if(stringB.equals("")) {
+            return stringA;
+        }
+        else if(str1 < str2){
+            return stringA;
+        }
+        else if(str2 < str1){
+            return stringB;
+        }
+        else
+            return stringA + stringB;
+
+        }
+
+        /* int compare1 = stringA.compareTo(stringB);
+        int compare2 = stringB.compareTo(stringA);
+
+         if(compare1 == 1 || compare2 == -1){
+           return stringB;
+        }
+        else if(compare2 == 1 || compare1 == -1){
+            return stringA;
+        }else if(stringA.length() == stringB.length()){
+            return stringA + stringB;
+        }
+
+        if (stringA.length() > stringB.length()) {
+           return stringB;
+        } else if (stringB.length() > stringA.length()) {
+          return stringA;
+        }
+        else if (stringA.length() == 0) {
+          return stringB;
+        }else if(stringB.length() == 0){
+           return stringA;
+        } else if (stringA.length() == stringB.length()) {
+           return stringA + stringB;
+        }else
+            return stringA;
+        */
+
 
     /*
      * evenUpperCaseOrOddLowerCase()
@@ -31,9 +78,16 @@ public class StringProblems {
      * - evenUpperCaseOrOddLowerCase("Zizzer Zazzer Zuzz") -> "ZIZZER ZAZZER ZUZZ"
      */
     public String evenUpperCaseOrOddLowerCase(String str) {
-        //TODO Add the code here that meets the requirements of the problem in the comment above.
-        return null;
+        // find if odd or even. if str % 2 = 0
+        //upper and lower case
+
+        if(str.length() % 2 == 0){
+            return str.toUpperCase();
+        }
+        return str.toLowerCase();
     }
+
+
 
     /*
      * stringCombiner()
@@ -60,10 +114,6 @@ public class StringProblems {
 
 
     }
-
-
-
-
 
     /*
      * left2()
