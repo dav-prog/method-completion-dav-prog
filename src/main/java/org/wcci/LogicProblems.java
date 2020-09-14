@@ -18,10 +18,7 @@ public class LogicProblems {
         //if statements with a
         if (isSummer && (temp >= 60 && temp <= 100)) {
             return true;
-        } else if (!isSummer && (temp >= 60 && temp <= 90)) {
-            return true;
-        }
-        return false;
+        } else return !isSummer && (temp >= 60 && temp <= 90);
     }
 
 
@@ -37,7 +34,8 @@ public class LogicProblems {
      */
     public boolean nearTen(int num) {
         // %<=2
-       return (num % 10 <=2);
+        if(num % 10 = 9, num % 10 = 8)
+       return (num % 10 <= 2);
 
 
     }
