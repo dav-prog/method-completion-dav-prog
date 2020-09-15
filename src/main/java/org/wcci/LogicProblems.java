@@ -34,7 +34,9 @@ public class LogicProblems {
      */
     public boolean nearTen(int num) {
         // %<=2
-        if(num % 10 = 9, num % 10 = 8)
+        if(num % 10 == 9 || num % 10 == 8){
+            return true;
+        }
        return (num % 10 <= 2);
 
 
